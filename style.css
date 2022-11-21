@@ -1,15 +1,20 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-}
 
 body{
     margin: 0;
     padding: 0;
+
+}
+ .website-info{  
+    justify-content: center;
+    margin: 0;
+    padding-left: 400px;
+    font-size: small;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: black;
 }
 
-
+/**Navbar**/
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -18,9 +23,20 @@ body{
     color: white;
 }
 
+.navbar img{
+    height: 10%;
+    width: 10%;
+}
+
+.navbar img:hover{
+    -webkit-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    transform:scale(1.10)
+}
+
 .brand-title{
-    font-size: 1.5rem;
-    margin: 1rem;
+    font-size: 2rem;
+    margin: 1.5rem;
 
 }
 
@@ -28,7 +44,6 @@ body{
     margin: 0;
     padding: 0;
     display: flex;
-
 }
 
 .navbar-links li {
@@ -37,20 +52,28 @@ body{
 
 .navbar-links li a {
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
     padding: 1rem;
     display: block;
+    font-weight: bold;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+
 .navbar-links li a:hover{
-    background-color: gray;
+    background-color:firebrick;
+    border-radius: 10px;
+    border-bottom: 5px solid black;
     cursor: pointer;
-    color: white;
+    color: black;
+    font-size:x-large;
+    transition: all 0.5s;
 }
 
 .toggle-button{
     position: absolute;
-    top: .75rem;
+    top: 1rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -73,6 +96,7 @@ body{
 
     .navbar-links{
         display: none;
+        width: 100%;
     }
 
     .navbar{
@@ -93,6 +117,143 @@ body{
     }
 
     .navbar-links.active{
-        display: inline;
+        display: flex;
     }
 }
+/**Footer**/
+footer{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 50px;
+	color: white;
+	background-color: rgb(28, 25, 25);
+	bottom: 0;
+}
+
+footer > *{
+	flex:1 100%;
+}
+
+.footer-left{
+	margin-right: 1.25em;
+	margin-bottom: 2em;
+}
+.footer-left img{
+	width: 60%;
+    height: 60%;
+}
+
+.footer-left img:hover{
+    -webkit-transform: scale(1.10);
+-ms-transform: scale(1.10);
+transform:scale(1.10)
+}
+
+h2{
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.footer h2:hover{
+    color:orangered;
+}
+
+.footer ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+.footer li{
+	line-height: 3em;
+}
+
+.footer a{
+	text-decoration: none;
+}
+
+.footer-right{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.footer-right > *{
+	flex: 1 50%;
+	margin-right: 1.25em;
+}
+
+.box a{
+	color: white;
+}
+
+.box li a:hover{
+    color: white;
+    background-color: red;
+    font-size: larger;
+
+}
+
+.footer-bottom{
+	text-align: center;
+	color:white;
+	padding-top:50px;
+}
+
+.footer-left p{
+	padding-right:20px;
+	color:white;
+}
+
+.socials a{
+	/**background: rgb(110, 106, 106);**/
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	margin-right: 10px;
+    
+}
+
+.socials a i{
+	color: #e7f2f4;
+	padding: 10px 12px;
+	font-size: 20px;
+}
+
+.socials img{
+    width: 100%;
+    height: 100%;
+}
+
+.socials img:hover {
+    -webkit-transform: scale(1.35);
+-ms-transform: scale(1.35);
+transform:scale(1.35)
+    
+}
+
+@media screen and (min-height: 600px){
+	.footer-right > *{
+		flex: 1;
+	}
+	.footer-left{
+		flex: 1 0px;
+	}
+	.footer-right{
+		flex: 2 0px;
+	}
+}
+
+@media (max-width: 600px){
+	.footer{
+		padding: 15px;
+	}
+}
+
+
