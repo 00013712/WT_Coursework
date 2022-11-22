@@ -199,9 +199,10 @@ input[type=checkbox]{
     background: #b51a1a;
     padding: 10px 24px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 20px;
     color: white;
+	letter-spacing: 8px;
 }
 .content a:hover{
     background: red;
