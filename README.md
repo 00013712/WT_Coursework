@@ -7,9 +7,9 @@ The repository 6 webpges of KFC in Uzbekistan
 
 The KFC branches provide chicken fast food to its customers 
 
-Website: https://github.com/00013712/WT_Coursework
+Github: https://github.com/00013712/WT_Coursework
 
-Github: https://00013712.github.io/WT_Coursework/
+Website: https://00013712.github.io/WT_Coursework/
 
 Note: The images and information indicated in the website are not real and this done to keep the real staff members personality confidantial.
 
