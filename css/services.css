@@ -217,6 +217,8 @@ footer{
 	justify-content: space-around;
 	align-items: flex-start;
 	flex-wrap: wrap;
+	font-size: 1.25rem;
+	bottom: 0;
 }
 .footer-left{
 	width: 30vw;
@@ -236,8 +238,13 @@ h2{
 	font-weight: 600;
 	font-size: 20px;
 }
+.footer h2{
+	font-size: 1.8rem;
+}
 .footer h2:hover{
     color:orangered;
+	font-size: xx-large;
+	padding-left: 20px;
 }
 .footer ul{
 	list-style: none;
@@ -246,7 +253,6 @@ h2{
 .footer li{
 	line-height: 3em;
 }
-
 .footer a{
 	text-decoration: none;
 }
@@ -270,12 +276,14 @@ h2{
 	color: white;
 }
 .box li a:hover{
-    color: white;
-    background-color: red;
-    font-size: larger;
-
+	color: orangered;
+    /* background-color: red; */
+    font-size: x-large;
+	padding-left: 15px;
 }
 .footer-bottom{
+	margin-top: 10rem;
+	height: auto;
 	text-align: center;
 	color:white;	
 }
@@ -288,7 +296,6 @@ h2{
 	height: 40px;
 	display: inline-block;
 	margin-right: 10px;
-    
 }
 .socials a i{
 	color: #e7f2f4;
@@ -302,8 +309,7 @@ h2{
 .socials img:hover {
     -webkit-transform: scale(1.35);
     -ms-transform: scale(1.35);
-    transform:scale(1.35)
-    
+    transform:scale(1.35)   
 }
 
 /* Tablets */
@@ -654,7 +660,7 @@ h2{
 }
 @media (max-width: 375px){
 	.logo img{
-		width: 2em;
+		width: 2.5em;
 		margin-top: 1rem;
 	}
 	.container{
