@@ -78,8 +78,8 @@ li {
 	margin-top: 10px;
 }
 .dropdown li {
-	padding: 0.5em 1em;
-	width: 8em;
+	padding: 0.5em;
+	width: 7em;
 	text-align: center;
 }
    .dropdown li:hover {
@@ -277,8 +277,7 @@ h2{
 }
 .box li a:hover{
 	color: orangered;
-    /* background-color: red; */
-    font-size: x-large;
+    font-size: larger;
 	padding-left: 15px;
 }
 .footer-bottom{

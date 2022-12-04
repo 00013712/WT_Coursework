@@ -141,6 +141,7 @@ input[type=checkbox]{
 	text-align: center;
 	color: white;
 	background-color: black;
+	font-family: serif;
 	letter-spacing: 5px;
 	font-size: 2.5rem;
 }
@@ -302,8 +303,7 @@ h2{
 }
 .box li a:hover{
 	color: orangered;
-    /* background-color: red; */
-    font-size: x-large;
+    font-size: larger;
 	padding-left: 15px;
 }
 .footer-bottom{

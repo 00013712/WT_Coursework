@@ -172,7 +172,7 @@ input[type=checkbox]{
     background-color: darkred;
     color: white;
     border: 1px solid black;
-    transition: all 2s;
+    transition: all 1s;
     font-size: larger;
 }
 .staff-members{
@@ -183,10 +183,10 @@ input[type=checkbox]{
     padding: 10px;
 }
 .directors img{
-    height: 80%;
-    width: 80%;
-    margin-left: 55px;
-    margin-top: 20px;
+	height: 70%;
+    width: 70%;
+    margin-left: 4rem;
+    margin-top: 1.8rem; 
     border-radius: 10%;
     border: 5px solid black;
 }
@@ -208,103 +208,57 @@ input[type=checkbox]{
     color: gray;
 }
 .directors p em{
+	font-size: 1.5rem;
     color:brown;
     font-weight: bold;
-    background-color: whitesmoke;
     padding: 5px;
     border-radius: 10px;
-    border: 1px solid black;
 }
 .directors p em:hover{
-    border: 2px solid red;
     color: black;
     background-color: whitesmoke;
-    font-size: larger;
+    font-size: 1.7rem;
 }
 .sub-directors{
     display: flex;
-    margin-top: 40px;
-}
-.managers{
-    flex: 33.33%;
-    padding:10px;
-}
-.managers img{
-    height: 80%;
-    width: 80%;
-    margin-left: 55px;
-    margin-top: 20px;
-    border-radius: 10%;
-    border: 5px solid black;
-}
-.managers img:hover{
-    -webkit-transform: scale(1.10);
-    -ms-transform: scale(1.10);
-    transform:scale(1.10)
-}
-.managers p{
-    margin-left: 100px;
-    margin-right: 90px;
-    margin-top: 5px;
-    text-align: center;
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-}
-.managers p span{
-    color: gray;
-}
-.managers p em{
-    color:brown;
-    font-weight: bold;
-    background-color: whitesmoke;
-    padding: 5px;
-    border-radius: 10px;
-    border: 1px solid black;
-}
-.managers p em:hover{
-    border: 2px solid red;
-    color: black;
-    background-color: whitesmoke;
-    font-size: larger;
+    margin-top: auto;
 }
 .kitchen-staff{
-    margin-top: 150px;
+	height: auto;
     box-sizing: border-box;
 }
 .kitchen-staff p{
-    margin-top: 25px;
+    margin-top: 2rem;
+	margin-bottom: 2rem;
     text-align: center;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2.5rem;
 }
 .kitchen-staff p span{
     color: gray;
-    margin-top: 20px;
 }
 .kitchen-staff p em{
     background-color: whitesmoke;
     border-radius: 20px;
     border: 1px solid red;
-    padding: 10px;
+    padding: 5px;
 }
 .kitchen-staff p em:hover{
     background-color: darkred;
     color: white;
     border: 1px solid black;
     font-size: larger;
-    transition: all 2s;
+    transition: all 1s;
 }
 .kitchen-staff img{
-    margin-left: 70px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	height: 100%;
     border-radius: 10%;
     border: 5px solid black;
-}
-.kitchen-staff img:hover{
-    -webkit-transform: scale(1.10);
-    -ms-transform: scale(1.10);
-    transform:scale(1.10)
 }
             /**Footer**/
 footer{
@@ -376,8 +330,7 @@ h2{
 }
 .box li a:hover{
 	color: orangered;
-    /* background-color: red; */
-    font-size: x-large;
+    font-size: larger;
 	padding-left: 15px;
 }
 .footer-bottom{
@@ -411,11 +364,60 @@ h2{
     transform:scale(1.35)   
 }
                                                     /* Tablets */
+@media (min-width: 1301px){
+	.kitchen-staff p{
+		font-size: 2rem;
+	}
+}
             /**************1300px************/
 @media (max-width: 1300px){
     .logo img{
 		width: 12vw;
 		padding-top: .5rem;
+	}
+	.CEO{
+		height: auto;
+		width: auto;
+	}
+	.CEO p{
+		font-size: 2rem;
+	}
+	.staff-members{
+		height: auto;
+		width: auto;
+		margin-top: .3rem;
+	}
+	.directors{
+		width: 30%;
+		height: auto;
+		text-align: center;
+	}
+	.directors img{
+		height: auto;
+		width: 90%;
+		margin: .5rem;
+		border: 3px solid black;
+	}
+	.directors p{
+		width: 4rem;
+		margin-top: .5rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.directors p span{
+		font-size: 1.3rem;
+		padding: 2px;
+	}
+	.directors p em{
+		font-size: 1.3rem;
+		padding: 0;
+		margin-left: auto;
+	}
+	.directors p em:hover{
+		font-size: 1.5rem;
+	}
+	.kitchen-staff p{
+		font-size: 1.5rem;
 	}
     footer{
 		bottom: 0;
@@ -435,10 +437,8 @@ h2{
 	}
 	.footer-right {
 		height: auto;
-		/* position: relative; */
 		width: 40vw;
-		/* top: 0vh; */
-		/* margin-top: 1rem; */
+		
 	}
 	.footer-right h2{
 		font-size: 2rem;
@@ -446,13 +446,56 @@ h2{
 	.footer-bottom {
 		height: auto;
 		font-size: 1.3;
-		/* margin-top: -50vh; */
 		width: 100vw;
 	}
 }
             /******************950****************/
 @media (max-width: 950px){
-    .footer {
+    .CEO{
+		height: auto;
+		width: auto;
+	}
+	.CEO p{
+		font-size: 1.5rem;
+	}
+	.staff-members{
+		height: auto;
+		width: auto;
+		margin-top: .3rem;
+	}
+	.directors{
+		width: 30%;
+		height: auto;
+		text-align: center;
+	}
+	.directors img{
+		height: auto;
+		width: 80%;
+		margin: .5rem;
+		border: 3px solid black;
+	}
+	.directors p{
+		width: 4rem;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.directors p span{
+		font-size: 1.3rem;
+		padding: 2px;
+	}
+	.directors p em{
+		font-size: 1.3rem;
+		padding: 0;
+		margin-left: auto;
+	}
+	.directors p em:hover{
+		font-size: 1.5rem;
+	}
+	.kitchen-staff p{
+		font-size: 1.4rem;
+	}
+	.footer {
 		height: auto;
 		justify-content: flex-start;
 		width: 100vw;
@@ -470,16 +513,12 @@ h2{
 	}
 	.footer-right {
 		height: auto;
-		/* position: relative; */
 		font-size: 1.1rem;
 		width: 40vw;
-		/* top: 0vh; */
-		/* margin-top: 1rem; */
 	}
 	.footer-bottom {
 		height: auto;
 		font-size: 1.2rem;
-		/* margin-top: -50vh; */
 		width: 100vw;
 	}
 }
@@ -493,11 +532,109 @@ h2{
 	.footer-bottom {
 		margin-top: -25vh;
 	}
+	.CEO{
+		height: auto;
+		width: auto;
+	}
+	.CEO p{
+		font-size: 1.4rem;
+	}
+	.staff-members{
+		height: auto;
+		width: auto;
+		margin-top: .3rem;
+	}
+	.directors{
+		width: 30%;
+		height: auto;
+		text-align: center;
+	}
+	.directors img{
+		height: auto;
+		width: 80%;
+		margin: .5rem;
+		border: 3px solid black;
+	}
+	.directors p{
+		width: 4rem;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.directors p span{
+		font-size: 1.2rem;
+		padding: 2px;
+	}
+	.directors p em{
+		font-size: 1.2rem;
+		padding: 0;
+		margin-left: auto;
+	}
+	.directors p em:hover{
+		font-size: 1.4rem;
+	}
+	.sub-directors{
+		height: auto;
+		width: auto;
+		margin-top: 0;
+	}
+	.kitchen-staff p{
+		font-size: 1.3rem;
+	}
 }
 @media (max-width: 768px){
     .logo img{
 		width: 15vw;
 		padding-top: .5rem;
+	}
+	.CEO{
+		height: auto;
+		width: auto;
+	}
+	.CEO p{
+		font-size: 1.3rem;
+	}
+	.staff-members{
+		height: auto;
+		width: auto;
+		margin-top: .3rem;
+	}
+	.directors{
+		width: 30%;
+		height: auto;
+		text-align: center;
+	}
+	.directors img{
+		height: auto;
+		width: 90%;
+		margin: .5rem;
+		border: 3px solid black;
+	}
+	.directors p{
+		width: 4rem;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.directors p span{
+		font-size: 1.1rem;
+		padding: 2px;
+	}
+	.directors p em{
+		font-size: 1.1rem;
+		padding: 0;
+		margin-left: auto;
+	}
+	.directors p em:hover{
+		font-size: 1.3rem;
+	}
+	.sub-directors{
+		height: auto;
+		width: auto;
+		margin-top: 0;
+	}
+	.kitchen-staff p{
+		font-size: 1.2rem;
 	}
     .footer{
 		height: auto;
@@ -520,13 +657,61 @@ h2{
 		position: relative;
 		top: 1rem;
 		font-size: 2.5vw;
-		/* margin-top: -50vh; */
 		width: 100vw;
 	}
 }
             /****************667***************/
 @media (max-width: 667px){
-    .footer {
+    .CEO{
+		height: auto;
+		width: auto;
+	}
+	.CEO p{
+		font-size: 1.2rem;
+	}
+	.staff-members{
+		height: auto;
+		width: auto;
+		margin-top: .3rem;
+	}
+	.directors{
+		width: 30%;
+		height: auto;
+		text-align: center;
+	}
+	.directors img{
+		height: auto;
+		width: 90%;
+		margin: .5rem;
+		border: 3px solid black;
+	}
+	.directors p{
+		width: 4rem;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.directors p span{
+		font-size: 1rem;
+		padding: 2px;
+	}
+	.directors p em{
+		font-size: 1rem;
+		padding: 0;
+		margin-left: auto;
+	}
+	.directors p em:hover{
+		font-size: 1.2rem;
+	}
+	.sub-directors{
+		height: auto;
+		width: auto;
+		margin-top: 0;
+	}
+	.kitchen-staff p{
+		font-size: 1.1rem;
+	}
+	.footer {
 		height: auto;
 		justify-content: flex-start;
 	}
@@ -544,17 +729,64 @@ h2{
 	.footer-bottom {
 		height: auto;
 		font-size: 2.5vw;
-		/* margin-top: -50vh; */
 		width: 100vw;
 	}
 }
-
                                                          /* Mobiles */
             /*****************570**************/
 @media (max-width: 570px) {
 	.logo img{
-		width: 17vw;
+		width: 2.5em;
 		padding-top: .5rem;
+	}
+	.CEO{
+		height: auto;
+		width: auto;
+	}
+	.CEO p{
+		font-size: 1rem;
+	}
+	.staff-members{
+		height: auto;
+		width: auto;
+		margin-top: .3rem;
+	}
+	.directors{
+		width: 30%;
+		height: auto;
+		text-align: center;
+	}
+	.directors img{
+		height: auto;
+		width: 90%;
+		margin: .5rem;
+		border: 3px solid black;
+	}
+	.directors p{
+		width: 4rem;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.directors p span{
+		font-size: .9rem;
+		padding: 2px;
+	}
+	.directors p em{
+		font-size: .9rem;
+		padding: 0;
+		margin-left: auto;
+	}
+	.directors p em:hover{
+		font-size: 1.1rem;
+	}
+	.sub-directors{
+		height: auto;
+		width: auto;
+		margin-top: 0;
+	}
+	.kitchen-staff p{
+		font-size: 1rem;
 	}
     .footer {
 		height: auto;
@@ -578,7 +810,6 @@ h2{
 		height: auto;
 		position: relative;
 		font-size: 2.5vw;
-		/* margin-top: -50vh; */
 		width: 100vw;
 	}
 }
@@ -587,6 +818,55 @@ h2{
 	.logo img{
 		width: 2.5em;
 		margin-top: 1rem;
+	}
+	.CEO{
+		height: auto;
+		width: auto;
+	}
+	.CEO p{
+		font-size: .8rem;
+	}
+	.staff-members{
+		height: auto;
+		width: auto;
+		margin-top: .3rem;
+	}
+	.directors{
+		width: 30%;
+		height: auto;
+		text-align: center;
+	}
+	.directors img{
+		height: auto;
+		width: 90%;
+		margin: .5rem;
+		border: 3px solid black;
+	}
+	.directors p{
+		width: 4rem;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.directors p span{
+		font-size: .7rem;
+		padding: 2px;
+	}
+	.directors p em{
+		font-size: .7rem;
+		padding: 0;
+		margin-left: auto;
+	}
+	.directors p em:hover{
+		font-size: .9rem;
+	}
+	.sub-directors{
+		height: auto;
+		width: auto;
+		margin-top: 0;
+	}
+	.kitchen-staff p{
+		font-size: .9rem;
 	}
     footer{
 		height: auto;
@@ -612,7 +892,56 @@ h2{
 }
             /****************320*************/
 @media (max-width: 320px){
-    .socials{
+    .CEO{
+		height: auto;
+		width: auto;
+	}
+	.CEO p{
+		font-size: .7rem;
+	}
+	.staff-members{
+		height: auto;
+		width: auto;
+		margin-top: .3rem;
+	}
+	.directors{
+		width: 30%;
+		height: auto;
+		text-align: center;
+	}
+	.directors img{
+		height: auto;
+		width: 90%;
+		margin: .5rem;
+		border: 3px solid black;
+	}
+	.directors p{
+		width: 4rem;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.directors p span{
+		font-size: .5rem;
+		padding: 2px;
+	}
+	.directors p em{
+		font-size: .5rem;
+		padding: 0;
+		margin-left: auto;
+	}
+	.directors p em:hover{
+		font-size: .7rem;
+	}
+	.sub-directors{
+		height: auto;
+		width: auto;
+		margin-top: 0;
+	}
+	.kitchen-staff p{
+		font-size: .8rem;
+	}
+	.socials{
 		width: 100%;
 	}
 	.socials img{

@@ -291,6 +291,8 @@ footer{
 	justify-content: space-around;
 	align-items: flex-start;
 	flex-wrap: wrap;
+	font-size: 1.25rem;
+	bottom: 0;
 }
 .footer-left{
 	width: 30vw;
@@ -310,8 +312,13 @@ h2{
 	font-weight: 600;
 	font-size: 20px;
 }
+.footer h2{
+	font-size: 1.8rem;
+}
 .footer h2:hover{
     color:orangered;
+	font-size: xx-large;
+	padding-left: 20px;
 }
 .footer ul{
 	list-style: none;
@@ -345,14 +352,16 @@ h2{
 	color: white;
 }
 .box li a:hover{
-    color: white;
-    background-color: red;
+    color: orangered;
     font-size: larger;
+	padding-left: 15px;
 
 }
 .footer-bottom{
+	margin-top: 10rem;
+	height: auto;
 	text-align: center;
-	color:white;	
+	color:white;
 }
 .footer-left p{
 	padding-right:20px;

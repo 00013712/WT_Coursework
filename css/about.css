@@ -180,7 +180,6 @@ input[type=checkbox]{
 
 /**Footer**/
 footer{
-	margin-top: -5vh;
 	height: 100vh;
 	padding: 50px;
 	color: white;
@@ -249,8 +248,7 @@ h2{
 }
 .box li a:hover{
 	color: orangered;
-    /* background-color: red; */
-    font-size: x-large;
+    font-size: larger;
 	padding-left: 15px;
 }
 .footer-bottom{
@@ -505,8 +503,8 @@ h2{
 	}
 }
 @media (max-width: 300px){
-.footer p, a{
+	.footer p, a{
 	font-size: .5rem;
-}
+	}
 }
 

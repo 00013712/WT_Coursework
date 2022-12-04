@@ -258,8 +258,7 @@ h2{
 }
 .box li a:hover{
 	color: orangered;
-    /* background-color: red; */
-    font-size: x-large;
+    font-size: larger;
 	padding-left: 15px;
 }
 .footer-bottom{
@@ -347,10 +346,7 @@ h2{
 	}
 	.footer-right {
 		height: auto;
-		/* position: relative; */
 		width: 40vw;
-		/* top: 0vh; */
-		/* margin-top: 1rem; */
 	}
 	.footer-right h2{
 		font-size: 2rem;
@@ -358,7 +354,6 @@ h2{
 	.footer-bottom {
 		height: auto;
 		font-size: 1.3rem;
-		/* margin-top: -50vh; */
 		width: 100vw;
 	}
 }
@@ -446,28 +441,16 @@ h2{
 	}
 	.footer-right {
 		height: auto;
-		/* position: relative; */
 		font-size: 1.1rem;
 		width: 40vw;
-		/* top: 0vh; */
-		/* margin-top: 1rem; */
 	}
 	.footer-bottom {
 		height: auto;
 		font-size: 1.2rem;
-		/* margin-top: -50vh; */
 		width: 100vw;
 	}
 }
  @media (max-width: 820px) {
-
-	/*#timeline {
-		width: 60vw;
-	}
-	#structure {width: inherit;} 
-	.footer-bottom {
-		margin-top: -25vh;
-	}  */
 	h1{
 		font-size: 2.5rem;
 	}
@@ -479,7 +462,6 @@ h2{
 		height: auto;
 		width: auto;
 		margin-right: 0;
-		/* border: 1px solid red; */
 	}
 	.column img{
 		height: 20vh;
@@ -515,7 +497,6 @@ h2{
 		height: auto;
 		width: auto;
 		margin-right: 0;
-		/* border: 1px solid red; */
 	}
 	.column img{
 		height: 20vh;
@@ -555,11 +536,10 @@ h2{
 		position: relative;
 		top: 1rem;
 		font-size: 2.5vw;
-		/* margin-top: -50vh; */
 		width: 100vw;
 	}
 }
-/* Mobiles */
+														/* Mobiles */
 			/******************667****************/
 @media (max-width: 667px){
 	h1{
@@ -573,7 +553,6 @@ h2{
 		height: auto;
 		width: auto;
 		margin-right: 0;
-		/* border: 1px solid red; */
 	}
 	.column img{
 		height: 18vh;
@@ -610,7 +589,6 @@ h2{
 	.footer-bottom {
 		height: auto;
 		font-size: 2.5vw;
-		/* margin-top: -50vh; */
 		width: 100vw;
 	}
 }
@@ -631,7 +609,6 @@ h2{
 		height: auto;
 		width: auto;
 		margin-right: 0;
-		/* border: 1px solid red; */
 	}
 	.column img{
 		height: 15vh;
@@ -672,7 +649,6 @@ h2{
 		height: auto;
 		position: relative;
 		font-size: 2.5vw;
-		/* margin-top: -50vh; */
 		width: 100vw;
 	}
 }
@@ -699,7 +675,6 @@ h2{
 		height: auto;
 		width: auto;
 		margin-right: 0;
-		/* border: 1px solid red; */
 	}
 	.column img{
 		height: 12vh;
@@ -737,7 +712,6 @@ h2{
 		height: auto;
 		width: auto;
 		margin-right: 0;
-		/* border: 1px solid red; */
 	}
 	.column img{
 		height: 10vh;
@@ -792,7 +766,6 @@ h2{
 		height: auto;
 		width: auto;
 		margin-right: 0;
-		/* border: 1px solid red; */
 	}
 	.column img{
 		height: 8vh;
